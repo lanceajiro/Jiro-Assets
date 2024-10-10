@@ -2,9 +2,9 @@
 fetch("/config-name")
 .then(response => response.json())
 .then(data => {
-    // Update page title, sidebar name, welcome title, and profile details
+    // Update page title, config name, welcome title, and profile details
     document.getElementById("page-title").innerText = data.name;
-    document.getElementById("sidebar-name").innerText = data.name + "s";
+    document.getElementById("config-name").innerText = data.name; // Update the config name
     document.getElementById("welcome-title").innerText = "Welcome to " + data.name;
 
     // Update profile photo if available
